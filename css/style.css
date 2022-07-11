@@ -26,8 +26,8 @@ h1 {
 iframe {
   display: block;
   margin: 0 auto;
-  width: 55%;
-  height: 35vw;
+  width: 55vw;
+  height: 60vh;
   padding: 20px; }
 
 footer {
@@ -38,10 +38,14 @@ footer {
 @media screen and (max-width: 768px) {
   header nav img {
     width: 50vw; }
+  h1 {
+    font-size: 100%; }
+  h2 {
+    font-size: 100%; }
   iframe {
-    max-height: 220px; } }
+    max-height: 400px; } }
 
 @media screen and (max-width: 1024px) {
   iframe {
     width: 80vw;
-    height: 30vh; } }
+    height: 60vh; } }
