@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Cuprum',Helvetica,Arial,Lucida,sans-serif; }
+
+header {
+  grid-area: header;
+  z-index: 1000; }
+  header nav {
+    background-color: #7CDA24; }
+    header nav img {
+      width: 20vw; }
+    header nav .nav-link {
+      color: #282828;
+      font-size: 20px; }
+
+h1 {
+  text-align: center;
+  padding: 20px; }
+
+.inscripcion {
+  text-align: center;
+  padding: 20px; }
+
+iframe {
+  display: block;
+  margin: 0 auto;
+  width: 55%;
+  height: 35vw;
+  padding: 20px; }
+
+footer {
+  grid-area: footer; }
+  footer img {
+    padding: 0px 10px; }
+
+@media screen and (max-width: 768px) {
+  header nav img {
+    width: 50vw; }
+  iframe {
+    max-height: 220px; } }
+
+@media screen and (max-width: 1024px) {
+  iframe {
+    width: 80vw;
+    height: 30vh; } }
