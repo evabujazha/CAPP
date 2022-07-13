@@ -5,30 +5,71 @@
   font-family: 'Cuprum',Helvetica,Arial,Lucida,sans-serif; }
 
 header {
-  grid-area: header;
-  z-index: 1000; }
-  header nav {
-    background-color: #7CDA24; }
-    header nav img {
-      width: 20vw; }
-    header nav .nav-link {
-      color: #282828;
-      font-size: 20px; }
+  z-index: 1000;
+  background-color: #7CDA24;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid #282828; }
+  header #aconquijalogo {
+    width: 7vw;
+    max-width: 20vw;
+    padding: 1vw; }
+  header #lomabolalogo {
+    width: 12vw;
+    max-width: 20vw; }
+  header #favllogo {
+    width: 10vw;
+    max-width: 20vw;
+    padding: 1vw; }
 
 h1 {
+  font-size: 6vh;
   text-align: center;
-  padding: 20px; }
+  padding-top: 20px; }
 
-.inscripcion {
+h2 {
+  font-size: 5vh;
   text-align: center;
-  padding: 20px; }
+  padding: 5px; }
+
+p {
+  text-align: justify;
+  font-size: 2.5vh;
+  padding: 40px 10vw; }
+
+h3 {
+  font-size: 3.5vh;
+  text-align: center; }
+
+.campOficial, .campLoma {
+  padding: 25px 10vw; }
+  .campOficial h4, .campLoma h4 {
+    font-size: 2.5vh;
+    font-weight: 750; }
+  .campOficial h5, .campLoma h5 {
+    font-size: 2vh; }
+  .campOficial ul li, .campLoma ul li {
+    font-size: 1.8vh; }
+
+a {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  color: #282828;
+  font-size: 3.5vh; }
+
+a:hover {
+  text-decoration: none !important;
+  color: #7CDA24; }
 
 iframe {
   display: block;
   margin: 0 auto;
   width: 55vw;
   height: 60vh;
-  padding: 20px; }
+  padding: 5px; }
 
 footer {
   grid-area: footer; }
@@ -36,12 +77,15 @@ footer {
     padding: 0px 10px; }
 
 @media screen and (max-width: 768px) {
-  header nav img {
-    width: 50vw; }
-  h1 {
-    font-size: 100%; }
-  h2 {
-    font-size: 100%; }
+  header #aconquijalogo {
+    width: 18vw;
+    max-width: 18vw; }
+  header #lomabolalogo {
+    width: 32vw;
+    max-width: 32vw; }
+  header #favllogo {
+    width: 25vw;
+    max-width: 25vw; }
   iframe {
     max-height: 400px; } }
 
